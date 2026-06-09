@@ -41,6 +41,7 @@ catkin_make
 Source your workspace:
 
 ```bash
+sudo chmod +x src/rtp_receiver/scripts/rtp_to_ros.py
 source devel/setup.bash
 ```
 
