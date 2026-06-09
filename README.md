@@ -6,7 +6,7 @@ The **RTP Receiver** is a ROS1 Noetic package designed to receive a ffmpeg strea
 
 It receives an H.264 encoded RTP/UDP video stream using a GStreamer pipeline and converts the incoming frames into standard ROS `sensor_msgs/Image` messages. The package supports streaming from multiple cameras simultaneously.
 
-**Works perfectly with our [rtp sender package](TODO)**
+**Works perfectly with our [rtp sender package](https://github.com/CJT-Robotics/rtp_sender.git)**
 
 ## Requirements
 
@@ -41,6 +41,7 @@ catkin_make
 Source your workspace:
 
 ```bash
+sudo chmod +x src/rtp_receiver/scripts/rtp_to_ros.py
 source devel/setup.bash
 ```
 
