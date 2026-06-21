@@ -6,10 +6,8 @@
     </node>
 
     <!-- Second Camera -->
-    <!-- <node name="rtp_receiver_rear" pkg="rtp_receiver" type="rtp_to_ros.py" output="screen">
-        <param name="port" type="int" value="5001" />
+    <node name="rtp_receiver_rear" pkg="rtp_receiver" type="rtp_to_ros.py" output="screen">
+        <param name="port" type="int" value="5002" />
         <param name="camera_id" type="string" value="rear_cam" />
-    </node> -->
-
-    <node name="rqt_image_view" pkg="rqt_image_view" type="rqt_image_view" output="screen" />
+    </node>
 </launch>
