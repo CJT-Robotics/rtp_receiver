@@ -15,7 +15,7 @@ class RTPReceiverNode:
         self.port = rospy.get_param('~port', 5000)
         self.camera_id = rospy.get_param('~camera_id', 'camera_0')
         
-        topic_name = f"/camera/image_raw/{self.camera_id}"
+        topic_name = f"/rtp/camera/image_raw/{self.camera_id}"
         
         self.image_pub = rospy.Publisher(topic_name, Image, queue_size=1)
         self.bridge = CvBridge()
